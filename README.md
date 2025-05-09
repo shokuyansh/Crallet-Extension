@@ -8,3 +8,21 @@ CRALLET EXTENSION
 
 
 -currently supports bnc and sepolia chains.
+
+
+HOW TO USE
+
+
+- fork the repo.
+
+
+- go to chrome extension->manage extensions
+
+
+-toggle developer mode on
+
+
+-Click on Load Unpacked and upload the folder.
+
+Crallet will be uploaded in your chrome browser.
+
