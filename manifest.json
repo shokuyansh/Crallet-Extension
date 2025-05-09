@@ -1,0 +1,22 @@
+{
+    "name": "Crallet",
+    "description": "Transfer crypto currency to any wallet",
+    "version": "1.0",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon":"Crallet.png"
+    },
+    "icons":{
+        "16":"Crallet.png",
+        "32":"Crallet.png",
+        "48":"Crallet.png",
+        "128":"Crallet.png"
+    },
+    "permissions":[
+        "tabs",
+        "bookmarks",
+        "storage",
+        "nativeMessaging"
+    ]
+}

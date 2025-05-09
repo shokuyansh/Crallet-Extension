@@ -1,0 +1,132 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    padding: 2px;
+    background: linear-gradient(45deg, #00f0ff, #00ff94, #ff00c8);
+    border-radius: 20px;
+}
+
+.card2 {
+    background-color: #111;
+    border-radius: 18px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+#heading {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #0ff;
+    font-weight: bold;
+}
+
+/* Input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.95em;
+    resize: none;
+}
+
+/* Transfer button */
+.button1 {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #00f0ff, #a100ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button1:hover {
+    background: linear-gradient(90deg, #0ff, #0f0);
+}
+
+/* Check Balance button */
+.button3 {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d90429;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Loader center (can be hidden initially) */
+.center {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Link style */
+a {
+    color: #0ff;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Optional loader bars if animated manually */
+.loader div {
+    display: inline-block;
+    width: 4px;
+    height: 16px;
+    background: #0ff;
+    margin: 2px;
+    animation: pulse 1.2s infinite ease-in-out;
+}
+.error-msg {
+    color: #ff4d4d;
+    background-color: #330000;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid #ff9999;
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(2);
+    }
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .card2 {
+        width: 90%;
+    }
+}

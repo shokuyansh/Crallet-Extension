@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crallet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  html, body {
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+</style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="card2">
+            <div class="form">
+                <p id="heading">Crallet</p>
+                <div class="field">
+                    <select id="network_select" class="input-field" autocomplete="off">
+                        <option value="Binance">BNC Testnet</option>
+                        <option value="sepolia">Ethereum Sepolia</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <input type="number" class="input-field" placeholder="amount" id="amount" autocomplete="off"/>
+                </div>
+                <div class="field">
+                    <input type="password" class="input-field" placeholder="Private Key" id="private_key" autocomplete="off" name="" id="" cols="10" rows="5"></input>
+                </div>
+                <div class="field">
+                    <input type="text" class="input-field" placeholder=" transfer address" id="address" autocomplete="off"/>
+                </div>
+                <p class="space"></p>
+                <p id="error-msg" class="error-msg" style="display: none;"></p>
+                <!--Loader-->
+                <div id="center" class="center">
+                    <div class="loader">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <div class="bar4"></div>
+                        <div class="bar5"></div>
+                        <div class="bar6"></div>
+                        <div class="bar7"></div>
+                        <div class="bar8"></div>
+                        <div class="bar9"></div>
+                        <div class="bar10"></div>
+                        <div class="bar11"></div>
+                        <div class="bar12"></div>
+                    </div>
+                </div>
+
+                <small>
+                    <a target="_blank" id="link" href="">Check Your Transaction</a>
+                </small>
+                <div class ="btn">
+                    <button id="form" class="button1">
+                        &nbsp;&nbsp;Transfer&nbsp;&nbsp;
+                    </button>
+                </div>
+                <button id="check_balance" class="button3">Check Balance</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.esm.min.js"></script>
+    <script src="./popup.js"></script>
+</body>
+</html>
